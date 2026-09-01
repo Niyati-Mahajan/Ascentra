@@ -1,0 +1,655 @@
+[
+  {
+    "input": {
+      "student_id": "LOW_RISK_STUDENT",
+      "semester": 4,
+      "attendance_percentage": 92.0,
+      "ca1_score": 25.0,
+      "ca2_score": 27.0,
+      "ca3_score": 26.0,
+      "best_2_ca_average": 26.5,
+      "mid_term_score": 26.0,
+      "previous_semester_tgpa": 8.6,
+      "academic_trend": "Improving"
+    },
+    "prediction": {
+      "student_id": "LOW_RISK_STUDENT",
+      "risk_probability": 0.1131,
+      "risk_level": "LOW",
+      "decision": "MONITOR",
+      "risk_factors": [
+        {
+          "feature": "ca2_score",
+          "value": 27.0,
+          "shap_value": 0.2951905429363251,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "ca_consistency",
+          "value": 0.816,
+          "shap_value": 0.02491038851439953,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "ca1_score",
+          "value": 25.0,
+          "shap_value": 0.016740713268518448,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "semester",
+          "value": 4,
+          "shap_value": 0.015315601602196693,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "ca_improvement",
+          "value": 1.0,
+          "shap_value": 0.008435070514678955,
+          "direction": "increases_risk"
+        }
+      ],
+      "protective_factors": [
+        {
+          "feature": "previous_semester_tgpa",
+          "value": 8.6,
+          "shap_value": -0.8344554305076599,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "mid_term_score",
+          "value": 26.0,
+          "shap_value": -0.5087119936943054,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "academic_trend",
+          "value": "Improving",
+          "shap_value": -0.40026373209548183,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "attendance_midterm_interaction",
+          "value": 23.92,
+          "shap_value": -0.1852799504995346,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "attendance_percentage",
+          "value": 92.0,
+          "shap_value": -0.14653174579143524,
+          "direction": "reduces_risk"
+        }
+      ],
+      "interventions": [
+        {
+          "risk_factor": "ca2_score = 27/30",
+          "why_it_matters": "The model assigns a risk-increasing contribution, but the raw assessment score is strong.",
+          "recommendation": "Maintain current assessment performance and review only if later CA scores decline."
+        },
+        {
+          "risk_factor": "CA consistency variation = 0.82",
+          "why_it_matters": "Variation across CA scores suggests unstable assessment performance.",
+          "recommendation": "Use weekly practice checks to stabilize performance across upcoming assessments."
+        },
+        {
+          "risk_factor": "ca1_score = 25/30",
+          "why_it_matters": "The model assigns a risk-increasing contribution, but the raw assessment score is strong.",
+          "recommendation": "Maintain current assessment performance and review only if later CA scores decline."
+        }
+      ],
+      "agent_response": {
+        "immediate_actions": [
+          "Continue routine academic monitoring."
+        ],
+        "priority_interventions": [
+          {
+            "risk_factor": "ca2_score = 27/30",
+            "why_it_matters": "The model assigns a risk-increasing contribution, but the raw assessment score is strong.",
+            "recommendation": "Maintain current assessment performance and review only if later CA scores decline."
+          },
+          {
+            "risk_factor": "CA consistency variation = 0.82",
+            "why_it_matters": "Variation across CA scores suggests unstable assessment performance.",
+            "recommendation": "Use weekly practice checks to stabilize performance across upcoming assessments."
+          },
+          {
+            "risk_factor": "ca1_score = 25/30",
+            "why_it_matters": "The model assigns a risk-increasing contribution, but the raw assessment score is strong.",
+            "recommendation": "Maintain current assessment performance and review only if later CA scores decline."
+          }
+        ],
+        "student_support_strategy": "Prioritize the strongest SHAP-ranked risk factors and convert each into a measurable support action.",
+        "advisor_follow_up": "Review progress after the next attendance cycle and assessment checkpoint.",
+        "monitoring_metrics": [
+          "attendance_percentage",
+          "best_2_ca_average",
+          "mid_term_score",
+          "academic_trend",
+          "previous_semester_tgpa when available"
+        ],
+        "escalation_condition": "Escalate if risk remains HIGH or the top risk factors worsen at the next review."
+      }
+    }
+  },
+  {
+    "input": {
+      "student_id": "MEDIUM_RISK_STUDENT",
+      "semester": 3,
+      "attendance_percentage": 72.0,
+      "ca1_score": 15.0,
+      "ca2_score": 18.0,
+      "ca3_score": 13.0,
+      "best_2_ca_average": 16.5,
+      "mid_term_score": 15.0,
+      "previous_semester_tgpa": 6.3,
+      "academic_trend": "Stable"
+    },
+    "prediction": {
+      "student_id": "MEDIUM_RISK_STUDENT",
+      "risk_probability": 0.4255,
+      "risk_level": "MEDIUM",
+      "decision": "ADVISE",
+      "risk_factors": [
+        {
+          "feature": "best_2_ca_average",
+          "value": 16.5,
+          "shap_value": 0.035043660551309586,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "attendance_percentage",
+          "value": 72.0,
+          "shap_value": 0.03244557976722717,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "ca_consistency",
+          "value": 2.055,
+          "shap_value": 0.0245389174669981,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "tgpa_best2_interaction",
+          "value": 10.395,
+          "shap_value": 0.016511814668774605,
+          "direction": "increases_risk"
+        }
+      ],
+      "protective_factors": [
+        {
+          "feature": "mid_term_score",
+          "value": 15.0,
+          "shap_value": -0.15724512934684753,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "academic_trend",
+          "value": "Stable",
+          "shap_value": -0.07368025567848235,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "attendance_best2_interaction",
+          "value": 11.879999999999999,
+          "shap_value": -0.06741002202033997,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "previous_semester_tgpa",
+          "value": 6.3,
+          "shap_value": -0.024942951276898384,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca2_score",
+          "value": 18.0,
+          "shap_value": -0.023291222751140594,
+          "direction": "reduces_risk"
+        }
+      ],
+      "interventions": [
+        {
+          "risk_factor": "best_2_ca_average = 16.5/30",
+          "why_it_matters": "Continuous assessment performance is pushing the prediction toward academic risk.",
+          "recommendation": "Targeted tutoring/revision sessions and weekly assessment monitoring."
+        },
+        {
+          "risk_factor": "Attendance = 72%",
+          "why_it_matters": "Low or weakening attendance is contributing to the predicted academic risk.",
+          "recommendation": "Weekly attendance monitoring, advisor meeting, and a documented attendance improvement target."
+        },
+        {
+          "risk_factor": "CA consistency variation = 2.06",
+          "why_it_matters": "Variation across CA scores suggests unstable assessment performance.",
+          "recommendation": "Use weekly practice checks to stabilize performance across upcoming assessments."
+        }
+      ],
+      "agent_response": {
+        "immediate_actions": [
+          "Advisor check-in and early support plan."
+        ],
+        "priority_interventions": [
+          {
+            "risk_factor": "best_2_ca_average = 16.5/30",
+            "why_it_matters": "Continuous assessment performance is pushing the prediction toward academic risk.",
+            "recommendation": "Targeted tutoring/revision sessions and weekly assessment monitoring."
+          },
+          {
+            "risk_factor": "Attendance = 72%",
+            "why_it_matters": "Low or weakening attendance is contributing to the predicted academic risk.",
+            "recommendation": "Weekly attendance monitoring, advisor meeting, and a documented attendance improvement target."
+          },
+          {
+            "risk_factor": "CA consistency variation = 2.06",
+            "why_it_matters": "Variation across CA scores suggests unstable assessment performance.",
+            "recommendation": "Use weekly practice checks to stabilize performance across upcoming assessments."
+          }
+        ],
+        "student_support_strategy": "Prioritize the strongest SHAP-ranked risk factors and convert each into a measurable support action.",
+        "advisor_follow_up": "Review progress after the next attendance cycle and assessment checkpoint.",
+        "monitoring_metrics": [
+          "attendance_percentage",
+          "best_2_ca_average",
+          "mid_term_score",
+          "academic_trend",
+          "previous_semester_tgpa when available"
+        ],
+        "escalation_condition": "Escalate if risk remains HIGH or the top risk factors worsen at the next review."
+      }
+    }
+  },
+  {
+    "input": {
+      "student_id": "HIGH_RISK_STUDENT",
+      "semester": 5,
+      "attendance_percentage": 52.0,
+      "ca1_score": 7.0,
+      "ca2_score": 10.0,
+      "ca3_score": 9.0,
+      "best_2_ca_average": 9.5,
+      "mid_term_score": 8.0,
+      "previous_semester_tgpa": 4.9,
+      "academic_trend": "Declining"
+    },
+    "prediction": {
+      "student_id": "HIGH_RISK_STUDENT",
+      "risk_probability": 0.7242,
+      "risk_level": "HIGH",
+      "decision": "ESCALATE",
+      "risk_factors": [
+        {
+          "feature": "academic_trend",
+          "value": "Declining",
+          "shap_value": 0.33603508977103047,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "mid_term_score",
+          "value": 8.0,
+          "shap_value": 0.23482120037078857,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "attendance_best2_interaction",
+          "value": 4.94,
+          "shap_value": 0.11007823795080185,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "ca_average",
+          "value": 8.667,
+          "shap_value": 0.10257023572921753,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "previous_semester_tgpa",
+          "value": 4.9,
+          "shap_value": 0.08427359908819199,
+          "direction": "increases_risk"
+        }
+      ],
+      "protective_factors": [
+        {
+          "feature": "ca1_score",
+          "value": 7.0,
+          "shap_value": -0.031186766922473907,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca_consistency",
+          "value": 1.247,
+          "shap_value": -0.02902388758957386,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca_improvement",
+          "value": 2.0,
+          "shap_value": -0.017184218391776085,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca3_score",
+          "value": 9.0,
+          "shap_value": -0.010843146592378616,
+          "direction": "reduces_risk"
+        }
+      ],
+      "interventions": [
+        {
+          "risk_factor": "Academic trend = Declining",
+          "why_it_matters": "The student's academic trajectory is pushing the model toward risk.",
+          "recommendation": "Schedule advisor follow-up and agree on short-cycle performance checkpoints."
+        },
+        {
+          "risk_factor": "Mid-term = 8/30",
+          "why_it_matters": "Mid-term performance is contributing to the predicted academic risk.",
+          "recommendation": "Identify weak subjects and provide targeted revision support before the next assessment."
+        },
+        {
+          "risk_factor": "attendance_best2_interaction = 4.94",
+          "why_it_matters": "The combination of attendance and academic performance is contributing to predicted risk.",
+          "recommendation": "Coordinate attendance monitoring with targeted tutoring so study support and class participation improve together."
+        }
+      ],
+      "agent_response": {
+        "immediate_actions": [
+          "Advisor escalation within one week."
+        ],
+        "priority_interventions": [
+          {
+            "risk_factor": "Academic trend = Declining",
+            "why_it_matters": "The student's academic trajectory is pushing the model toward risk.",
+            "recommendation": "Schedule advisor follow-up and agree on short-cycle performance checkpoints."
+          },
+          {
+            "risk_factor": "Mid-term = 8/30",
+            "why_it_matters": "Mid-term performance is contributing to the predicted academic risk.",
+            "recommendation": "Identify weak subjects and provide targeted revision support before the next assessment."
+          },
+          {
+            "risk_factor": "attendance_best2_interaction = 4.94",
+            "why_it_matters": "The combination of attendance and academic performance is contributing to predicted risk.",
+            "recommendation": "Coordinate attendance monitoring with targeted tutoring so study support and class participation improve together."
+          }
+        ],
+        "student_support_strategy": "Prioritize the strongest SHAP-ranked risk factors and convert each into a measurable support action.",
+        "advisor_follow_up": "Review progress after the next attendance cycle and assessment checkpoint.",
+        "monitoring_metrics": [
+          "attendance_percentage",
+          "best_2_ca_average",
+          "mid_term_score",
+          "academic_trend",
+          "previous_semester_tgpa when available"
+        ],
+        "escalation_condition": "Escalate if risk remains HIGH or the top risk factors worsen at the next review."
+      }
+    }
+  },
+  {
+    "input": {
+      "student_id": "SEMESTER_1_STUDENT",
+      "semester": 1,
+      "attendance_percentage": 68.0,
+      "ca1_score": 14.0,
+      "ca2_score": 16.0,
+      "ca3_score": 13.0,
+      "best_2_ca_average": 15.0,
+      "mid_term_score": 14.0,
+      "previous_semester_tgpa": null,
+      "academic_trend": "Stable"
+    },
+    "prediction": {
+      "student_id": "SEMESTER_1_STUDENT",
+      "risk_probability": 0.4471,
+      "risk_level": "MEDIUM",
+      "decision": "ADVISE",
+      "risk_factors": [
+        {
+          "feature": "previous_semester_tgpa",
+          "value": null,
+          "shap_value": 0.04352783039212227,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "attendance_percentage",
+          "value": 68.0,
+          "shap_value": 0.04272451624274254,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "tgpa_best2_interaction",
+          "value": null,
+          "shap_value": 0.03109763003885746,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "best_2_ca_average",
+          "value": 15.0,
+          "shap_value": 0.029446173459291458,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "semester",
+          "value": 1,
+          "shap_value": 0.010238250717520714,
+          "direction": "increases_risk"
+        }
+      ],
+      "protective_factors": [
+        {
+          "feature": "academic_trend",
+          "value": "Stable",
+          "shap_value": -0.09160975751001388,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca_average",
+          "value": 14.333,
+          "shap_value": -0.07062602043151855,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca2_score",
+          "value": 16.0,
+          "shap_value": -0.06383589655160904,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "attendance_best2_interaction",
+          "value": 10.200000000000001,
+          "shap_value": -0.05466363951563835,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca_consistency",
+          "value": 1.247,
+          "shap_value": -0.03035544790327549,
+          "direction": "reduces_risk"
+        }
+      ],
+      "interventions": [
+        {
+          "risk_factor": "Previous semester TGPA = unavailable",
+          "why_it_matters": "The student is in Semester 1, so previous TGPA is not available and is not interpreted as poor performance.",
+          "recommendation": "Use current attendance, CA scores, mid-term score, and academic trend for early-semester monitoring."
+        },
+        {
+          "risk_factor": "Attendance = 68%",
+          "why_it_matters": "Low or weakening attendance is contributing to the predicted academic risk.",
+          "recommendation": "Weekly attendance monitoring, advisor meeting, and a documented attendance improvement target."
+        },
+        {
+          "risk_factor": "TGPA and CA performance interaction = unavailable",
+          "why_it_matters": "Prior semester performance combined with current CA performance is contributing to predicted risk.",
+          "recommendation": "Create a recovery plan that connects prior weak areas with current assessment preparation."
+        }
+      ],
+      "agent_response": {
+        "immediate_actions": [
+          "Advisor check-in and early support plan."
+        ],
+        "priority_interventions": [
+          {
+            "risk_factor": "Previous semester TGPA = unavailable",
+            "why_it_matters": "The student is in Semester 1, so previous TGPA is not available and is not interpreted as poor performance.",
+            "recommendation": "Use current attendance, CA scores, mid-term score, and academic trend for early-semester monitoring."
+          },
+          {
+            "risk_factor": "Attendance = 68%",
+            "why_it_matters": "Low or weakening attendance is contributing to the predicted academic risk.",
+            "recommendation": "Weekly attendance monitoring, advisor meeting, and a documented attendance improvement target."
+          },
+          {
+            "risk_factor": "TGPA and CA performance interaction = unavailable",
+            "why_it_matters": "Prior semester performance combined with current CA performance is contributing to predicted risk.",
+            "recommendation": "Create a recovery plan that connects prior weak areas with current assessment preparation."
+          }
+        ],
+        "student_support_strategy": "Prioritize the strongest SHAP-ranked risk factors and convert each into a measurable support action.",
+        "advisor_follow_up": "Review progress after the next attendance cycle and assessment checkpoint.",
+        "monitoring_metrics": [
+          "attendance_percentage",
+          "best_2_ca_average",
+          "mid_term_score",
+          "academic_trend",
+          "previous_semester_tgpa when available"
+        ],
+        "escalation_condition": "Escalate if risk remains HIGH or the top risk factors worsen at the next review."
+      }
+    }
+  },
+  {
+    "input": {
+      "student_id": "SENIOR_SEMESTER_STUDENT",
+      "semester": 7,
+      "attendance_percentage": 61.0,
+      "ca1_score": 12.0,
+      "ca2_score": 14.0,
+      "ca3_score": 15.0,
+      "best_2_ca_average": 14.5,
+      "mid_term_score": 13.0,
+      "previous_semester_tgpa": 5.4,
+      "academic_trend": "Declining"
+    },
+    "prediction": {
+      "student_id": "SENIOR_SEMESTER_STUDENT",
+      "risk_probability": 0.6258,
+      "risk_level": "MEDIUM",
+      "decision": "ADVISE",
+      "risk_factors": [
+        {
+          "feature": "academic_trend",
+          "value": "Declining",
+          "shap_value": 0.39757509736227803,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "attendance_midterm_interaction",
+          "value": 7.93,
+          "shap_value": 0.05182736739516258,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "previous_semester_tgpa",
+          "value": 5.4,
+          "shap_value": 0.041760437190532684,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "tgpa_best2_interaction",
+          "value": 7.83,
+          "shap_value": 0.02988741733133793,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "best_2_ca_average",
+          "value": 14.5,
+          "shap_value": 0.027922939509153366,
+          "direction": "increases_risk"
+        }
+      ],
+      "protective_factors": [
+        {
+          "feature": "ca_average",
+          "value": 13.667,
+          "shap_value": -0.05818970873951912,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca_consistency",
+          "value": 1.247,
+          "shap_value": -0.02902388758957386,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca_improvement",
+          "value": 3.0,
+          "shap_value": -0.017184218391776085,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca1_score",
+          "value": 12.0,
+          "shap_value": -0.013179869391024113,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "ca2_score",
+          "value": 14.0,
+          "shap_value": -0.004708991385996342,
+          "direction": "reduces_risk"
+        }
+      ],
+      "interventions": [
+        {
+          "risk_factor": "Academic trend = Declining",
+          "why_it_matters": "The student's academic trajectory is pushing the model toward risk.",
+          "recommendation": "Schedule advisor follow-up and agree on short-cycle performance checkpoints."
+        },
+        {
+          "risk_factor": "attendance_midterm_interaction = 7.93",
+          "why_it_matters": "The combination of attendance and academic performance is contributing to predicted risk.",
+          "recommendation": "Coordinate attendance monitoring with targeted tutoring so study support and class participation improve together."
+        },
+        {
+          "risk_factor": "Previous Semester TGPA = 5.4",
+          "why_it_matters": "Prior academic performance is contributing to the predicted academic risk.",
+          "recommendation": "Review previous-semester weak subjects and create a semester recovery plan."
+        }
+      ],
+      "agent_response": {
+        "immediate_actions": [
+          "Advisor check-in and early support plan."
+        ],
+        "priority_interventions": [
+          {
+            "risk_factor": "Academic trend = Declining",
+            "why_it_matters": "The student's academic trajectory is pushing the model toward risk.",
+            "recommendation": "Schedule advisor follow-up and agree on short-cycle performance checkpoints."
+          },
+          {
+            "risk_factor": "attendance_midterm_interaction = 7.93",
+            "why_it_matters": "The combination of attendance and academic performance is contributing to predicted risk.",
+            "recommendation": "Coordinate attendance monitoring with targeted tutoring so study support and class participation improve together."
+          },
+          {
+            "risk_factor": "Previous Semester TGPA = 5.4",
+            "why_it_matters": "Prior academic performance is contributing to the predicted academic risk.",
+            "recommendation": "Review previous-semester weak subjects and create a semester recovery plan."
+          }
+        ],
+        "student_support_strategy": "Prioritize the strongest SHAP-ranked risk factors and convert each into a measurable support action.",
+        "advisor_follow_up": "Review progress after the next attendance cycle and assessment checkpoint.",
+        "monitoring_metrics": [
+          "attendance_percentage",
+          "best_2_ca_average",
+          "mid_term_score",
+          "academic_trend",
+          "previous_semester_tgpa when available"
+        ],
+        "escalation_condition": "Escalate if risk remains HIGH or the top risk factors worsen at the next review."
+      }
+    }
+  }
+]

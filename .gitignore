@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+node_modules/
+.venv/
+venv/
+backend/.venv/
+Module-A/.git-backup/
+
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+*.joblib
+backend/storage_data/*.json
+storage_data/*.json

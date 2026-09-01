@@ -1,0 +1,1 @@
+{"provenance":"Original prototype utterances for deterministic fallback; a trained classifier is not active without a Python runtime and sufficient labelled data.","intents":["role_information","role_comparison","skill_requirements","skill_gap","career_direction","resume_question","placement_readiness","roadmap_question","project_guidance","general_career_question"]}

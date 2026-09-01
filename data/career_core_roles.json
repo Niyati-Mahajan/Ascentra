@@ -1,0 +1,10 @@
+[
+  {"id":"fullstack","name":"Full-Stack Developer","cat":"Engineering","desc":"Build reliable product experiences across frontend and backend.","req":{"JavaScript":75,"React":70,"Node.js":70,"Express.js":60,"SQL":60,"REST APIs":65,"Git":50,"DSA":60},"pref":["TypeScript","MongoDB","Docker"]},
+  {"id":"backend","name":"Backend Developer","cat":"Engineering","desc":"Design APIs, data services and durable server systems.","req":{"Node.js":75,"Express.js":65,"SQL":70,"REST APIs":75,"DSA":70,"Git":50},"pref":["Docker","AWS","Java"]},
+  {"id":"frontend","name":"Frontend Developer","cat":"Engineering","desc":"Create accessible, fast and polished interface systems.","req":{"JavaScript":75,"React":75,"HTML":70,"CSS":70,"Git":50},"pref":["TypeScript","Figma"]},
+  {"id":"swe","name":"Software Engineer","cat":"Engineering","desc":"Solve broad product and platform engineering problems.","req":{"DSA":75,"Java":65,"Python":60,"SQL":55,"Git":60},"pref":["Docker","AWS"]},
+  {"id":"data","name":"Data Analyst","cat":"Data","desc":"Turn data into practical decisions and narratives.","req":{"Python":65,"SQL":75,"Statistics":65,"Power BI":60,"Pandas":60},"pref":["Communication"]},
+  {"id":"ml","name":"ML Engineer","cat":"Data","desc":"Build and operationalize machine learning systems.","req":{"Python":75,"Statistics":75,"Machine Learning":70,"Pandas":70,"TensorFlow":60},"pref":["Docker","AWS"]},
+  {"id":"devops","name":"Cloud / DevOps Engineer","cat":"Infrastructure","desc":"Automate reliable cloud delivery and operations.","req":{"Linux":70,"Docker":70,"AWS":70,"CI/CD":65,"Kubernetes":55},"pref":["Python","Git"]},
+  {"id":"product","name":"Product Analyst","cat":"Product","desc":"Frame customer problems through data and product judgment.","req":{"SQL":65,"Statistics":55,"Communication":70,"Power BI":55},"pref":["Figma","Python"]}
+]

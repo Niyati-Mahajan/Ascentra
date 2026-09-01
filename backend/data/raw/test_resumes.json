@@ -1,0 +1,50 @@
+[
+  {
+    "id": "TEST_0",
+    "name": "Test Candidate 0",
+    "text": "Experienced candidate proficient in JavaScript, React, Node.js, Express.js, SQL, REST APIs, HTML, CSS, and Git. Built full-stack web applications with responsive design and database backends.",
+    "target_role": "Full Stack Developer"
+  },
+  {
+    "id": "TEST_1",
+    "name": "Test Candidate 1",
+    "text": "Backend engineer skilled in Node.js, Express.js, Python, Java, SQL, MongoDB, PostgreSQL, REST APIs, and Docker. Designed microservices and scalable RESTful backend services.",
+    "target_role": "Backend Developer"
+  },
+  {
+    "id": "TEST_2",
+    "name": "Test Candidate 2",
+    "text": "Frontend specialist with hands-on skills in JavaScript, TypeScript, React, HTML, CSS, Figma, and Webpack. Built interactive single-page web applications.",
+    "target_role": "Frontend Developer"
+  },
+  {
+    "id": "TEST_3",
+    "name": "Test Candidate 3",
+    "text": "Software engineer with solid foundation in DSA, C++, Java, Python, SQL, and Git. Solved complex algorithmic problems and built desktop/mobile backend systems.",
+    "target_role": "Software Engineer"
+  },
+  {
+    "id": "TEST_4",
+    "name": "Test Candidate 4",
+    "text": "Data analyst with expertise in Python, SQL, Statistics, Power BI, Pandas, NumPy, and Excel. Analyzed business intelligence reports and created dashboard visualisations.",
+    "target_role": "Data Analyst"
+  },
+  {
+    "id": "TEST_5",
+    "name": "Test Candidate 5",
+    "text": "Data scientist experienced in Python, Machine Learning, Statistics, Pandas, NumPy, Scikit-learn, SQL, and data pipelines. Developed predictive models for classification.",
+    "target_role": "Data Scientist"
+  },
+  {
+    "id": "TEST_6",
+    "name": "Test Candidate 6",
+    "text": "Machine Learning Engineer with deep knowledge of Python, TensorFlow, Scikit-learn, Machine Learning, MLOps, Docker, AWS, and model deployment.",
+    "target_role": "Machine Learning Engineer"
+  },
+  {
+    "id": "TEST_7",
+    "name": "Test Candidate 7",
+    "text": "DevOps Cloud Engineer experienced in Linux, Docker, Kubernetes, AWS, CI/CD pipelines, Terraform, Python, and Git version control.",
+    "target_role": "DevOps / Cloud Engineer"
+  }
+]

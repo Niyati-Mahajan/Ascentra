@@ -1,0 +1,12 @@
+const assert=require('assert'),{readRoles,summary,roleFit,guide,Core}=require('../intelligence');
+assert.equal(readRoles().length,Core.ROLES.length,'Node intelligence must expose canonical Core roles only');
+assert.equal(summary({}).readiness,null,'new student must not receive a fabricated readiness score');
+let profile={student:{target:'fullstack',skills:{}},resume:{parsed:{text:'resume',skills:['JavaScript','SQL'],projects:[],sections:{}}}};
+let fit=roleFit(profile,readRoles().find(r=>r.role_id==='fullstack'));
+assert(fit.score>0&&fit.gaps.includes('Node.js'),'resume evidence must affect compatibility without counting as Ready');
+let jsEvidence=Core.getSkillEvidence('JavaScript',Core.roleById('fullstack'),profile);
+assert.equal(jsEvidence.status,'Priority gap','resume-only evidence should acknowledge signal without proving readiness');
+assert(jsEvidence.evidenceScore<jsEvidence.roleRequirement,'resume-only evidence cannot mark a required skill Ready');
+assert(summary(profile).next_action.skill,'a selected role with evidence must produce an evidence-based gap');
+assert(guide(profile,'What am I missing?').answer.includes('Node.js'),'guide must use actual role gaps');
+console.log('intelligence tests passed');

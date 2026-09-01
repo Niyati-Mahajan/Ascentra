@@ -1,0 +1,28 @@
+{
+  "selected_model": "logistic_regression",
+  "selection_reason": "Highest combination of ROC-AUC (0.7003) and F1 score (0.7937) on untouched 20% test set.",
+  "selection_metric": "roc_auc + f1",
+  "metrics": {
+    "logistic_regression": {
+      "accuracy": 0.672,
+      "precision": 0.9626,
+      "recall": 0.6752,
+      "f1": 0.7937,
+      "roc_auc": 0.7003
+    },
+    "random_forest": {
+      "accuracy": 0.9345,
+      "precision": 0.9345,
+      "recall": 1.0,
+      "f1": 0.9661,
+      "roc_auc": 0.6615
+    },
+    "xgboost": {
+      "accuracy": 0.9335,
+      "precision": 0.9349,
+      "recall": 0.9984,
+      "f1": 0.9656,
+      "roc_auc": 0.6718
+    }
+  }
+}

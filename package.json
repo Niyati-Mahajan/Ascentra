@@ -1,0 +1,17 @@
+{
+  "name": "ascentra-career-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Placement guidance and career roadmap platform",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mammoth": "^1.12.1",
+    "pdf-parse": "^2.4.5"
+  }
+}

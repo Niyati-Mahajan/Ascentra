@@ -1,0 +1,69 @@
+{
+  "occupation_data": [
+    {
+      "O*NET-SOC Code": "15-1252.00",
+      "Title": "Software Developers",
+      "Description": "Research, design, and develop computer and network software."
+    },
+    {
+      "O*NET-SOC Code": "15-1254.00",
+      "Title": "Web Developers",
+      "Description": "Construct and maintain website user interfaces and web applications."
+    },
+    {
+      "O*NET-SOC Code": "15-1211.00",
+      "Title": "Computer Systems Analysts",
+      "Description": "Analyze science, engineering, business, and data processing problems."
+    },
+    {
+      "O*NET-SOC Code": "15-2051.00",
+      "Title": "Data Scientists",
+      "Description": "Develop algorithms and statistical models to analyze data."
+    },
+    {
+      "O*NET-SOC Code": "15-1212.00",
+      "Title": "Information Security Analysts",
+      "Description": "Plan, implement, upgrade, or monitor security measures for protection of computer networks and information."
+    }
+  ],
+  "essential_skills": [
+    {
+      "occupation": "Software Developers",
+      "skill/element": "Programming",
+      "importance": 4.5,
+      "level": 4.2
+    },
+    {
+      "occupation": "Software Developers",
+      "skill/element": "Critical Thinking",
+      "importance": 4.1,
+      "level": 4.0
+    },
+    {
+      "occupation": "Web Developers",
+      "skill/element": "Web Architecture",
+      "importance": 4.6,
+      "level": 4.3
+    }
+  ],
+  "software_skills": [
+    {
+      "occupation": "Software Developers",
+      "software/tool": "Python",
+      "hot_technology": "Y",
+      "in_demand": "Y"
+    },
+    {
+      "occupation": "Software Developers",
+      "software/tool": "JavaScript",
+      "hot_technology": "Y",
+      "in_demand": "Y"
+    },
+    {
+      "occupation": "Web Developers",
+      "software/tool": "React.js",
+      "hot_technology": "Y",
+      "in_demand": "Y"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "low_max": 0.35,
+  "medium_max": 0.7,
+  "classification_threshold": 0.39
+}

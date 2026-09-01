@@ -1,0 +1,30 @@
+{
+  "target": "PlacementStatus",
+  "excluded_features": [
+    "StudentID",
+    "Gender"
+  ],
+  "numeric_features": [
+    "CGPA",
+    "Internships",
+    "Projects",
+    "Certifications",
+    "AptitudeTestScore",
+    "SoftSkillsScore",
+    "ExtracurricularActivities",
+    "PlacementTraining",
+    "SSC_Marks",
+    "HSC_Marks",
+    "AcademicConsistencyIndex",
+    "PracticalExperienceScore",
+    "SkillsBalanceScore"
+  ],
+  "categorical_features": [
+    "Stream"
+  ],
+  "engineered_features": [
+    "AcademicConsistencyIndex",
+    "PracticalExperienceScore",
+    "SkillsBalanceScore"
+  ]
+}

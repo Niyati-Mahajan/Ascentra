@@ -1,0 +1,33 @@
+skill_id,skill_name,category
+sk_1,JavaScript,Technical
+sk_2,TypeScript,Technical
+sk_3,React,Technical
+sk_4,Node.js,Technical
+sk_5,Express.js,Technical
+sk_6,SQL,Technical
+sk_7,Git,Technical
+sk_8,GitHub,Technical
+sk_9,Python,Technical
+sk_10,Java,Technical
+sk_11,C++,Technical
+sk_12,C,Technical
+sk_13,DSA,Technical
+sk_14,MongoDB,Technical
+sk_15,MySQL,Technical
+sk_16,PostgreSQL,Technical
+sk_17,REST APIs,Technical
+sk_18,Docker,Technical
+sk_19,AWS,Technical
+sk_20,HTML,Technical
+sk_21,CSS,Technical
+sk_22,Statistics,Technical
+sk_23,Machine Learning,Technical
+sk_24,Pandas,Technical
+sk_25,NumPy,Technical
+sk_26,Figma,Technical
+sk_27,Linux,Technical
+sk_28,Kubernetes,Technical
+sk_29,CI/CD,Technical
+sk_30,TensorFlow,Technical
+sk_31,Power BI,Technical
+sk_32,Communication,Technical

@@ -1,0 +1,130 @@
+{
+  "JavaScript": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "TypeScript": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "React": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Node.js": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Express.js": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "SQL": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Git": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "GitHub": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Python": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Java": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "C++": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "C": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "DSA": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "MongoDB": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "MySQL": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "PostgreSQL": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "REST APIs": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Docker": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "AWS": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "HTML": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "CSS": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Statistics": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Machine Learning": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Pandas": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "NumPy": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Figma": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Linux": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Kubernetes": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "CI/CD": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "TensorFlow": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Power BI": {
+    "category": "Technical",
+    "importance": 4.0
+  },
+  "Communication": {
+    "category": "Technical",
+    "importance": 4.0
+  }
+}
